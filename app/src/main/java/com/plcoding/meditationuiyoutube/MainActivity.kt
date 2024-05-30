@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.plcoding.meditationuiyoutube.ui.HomeScreen
 import com.plcoding.meditationuiyoutube.ui.SettingsOfRoom
+import com.plcoding.meditationuiyoutube.ui.screens.LoginScreen
 import com.plcoding.meditationuiyoutube.ui.screens.ProfileScreen
 
 import com.plcoding.meditationuiyoutube.ui.theme.MeditationUIYouTubeTheme
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MeditationUIYouTubeTheme {
-                SettingsOfRoom()
+                LoginScreen()
             }
         }
     }

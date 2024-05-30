@@ -23,7 +23,8 @@ fun SettingsOfRoom(){
         modifier = Modifier
             .fillMaxSize()
     ){Column {
-        ChipSection(chips = listOf("Температура", "Свет", "Влажность"))}}
+        ChipSection(chips = listOf("Температура", "Свет", "Влажность"))}
+    }
 
 }
 
@@ -34,10 +35,10 @@ fun ChipSection(
     var selectedChipIndex by remember {
         mutableStateOf(0)
     }
-    LazyRow(horizontalArrangement = Arrangement.CenterHorizontally) {
+    LazyRow(horizontalArrangement = Arrangement.SpaceEvenly) {
         items(chips.size) {
             Box(
-                contentAlignment = Alignment.Center,
+//                contentAlignment = Alignment.Center,
                 modifier = Modifier
                     .padding(start = 15.dp, top = 15.dp, bottom = 15.dp)
                     .clickable {
@@ -54,4 +55,9 @@ fun ChipSection(
             }
         }
     }
+}
+
+@Composable
+fun DisplayTemeperature(){
+
 }
